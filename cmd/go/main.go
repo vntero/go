@@ -6,7 +6,7 @@ import (
 	"net/http"
 )
 
-func main() {
+func greeter() {
 	helloHandler := func(w http.ResponseWriter, req *http.Request) {
 		io.WriteString(w, "Hello, young world!\n")
 	}
